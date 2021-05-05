@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EulerFunction.cpp" />
     <ClCompile Include="GetSimpleNumber.cpp" />
+    <ClCompile Include="Mod.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EulerFunction.h" />
     <ClInclude Include="GetSimpleNumber.h" />
+    <ClInclude Include="Mod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

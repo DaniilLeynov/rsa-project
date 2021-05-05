@@ -3,11 +3,15 @@
  */
 #include <iostream>
 #include "GetSimpleNumber.h"
+#include "Mod.h"
 using namespace std;
 
 
 int main()
 {
-	GetSimpleNumber firstNumber;
-	int p = firstNumber.GetPrimaryNumber();
+	GetSimpleNumber SimpleNumber;
+	int p = SimpleNumber.GetPrimaryNumber();
+	int q = SimpleNumber.GetPrimaryNumber();
+	Mod modul;
+	int mod = modul.CreateMod(p, q);
 }
