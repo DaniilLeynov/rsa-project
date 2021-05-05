@@ -143,6 +143,7 @@
     <ClCompile Include="GetExhibitor.cpp" />
     <ClCompile Include="GetSimpleNumber.cpp" />
     <ClCompile Include="Mod.cpp" />
+    <ClCompile Include="PublicKey.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,7 @@
     <ClInclude Include="GetExhibitor.h" />
     <ClInclude Include="GetSimpleNumber.h" />
     <ClInclude Include="Mod.h" />
+    <ClInclude Include="PublicKey.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
