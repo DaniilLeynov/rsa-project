@@ -3,7 +3,7 @@
 class EulerFunction
 {
 public:
-	int GetFi(ll p, ll q);
+	ll GetFi(ll p, ll q);
 	
 };
 

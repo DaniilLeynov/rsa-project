@@ -4,9 +4,8 @@
 #include "GetSimpleNumber.h"
 #define ll long long
 
-class GetSimpleNumber
-{
-    ll mulmod(ll a, ll b, ll mod)
+
+    ll GetSimpleNumber::mulmod(ll a, ll b, ll mod)
     {
         ll x = 0, y = a % mod;
         while (b > 0)
@@ -23,7 +22,7 @@ class GetSimpleNumber
     /*
      * modular exponentiation
      */
-    ll modulo(ll base, ll exponent, ll mod)
+    ll GetSimpleNumber::modulo(ll base, ll exponent, ll mod)
     {
         ll x = 1;
         ll y = base;
@@ -37,7 +36,7 @@ class GetSimpleNumber
         return x % mod;
     }
 
-    bool Miller(ll p, int iteration)
+    bool GetSimpleNumber::Miller(ll p, int iteration)
     {
         if (p < 2)
         {
@@ -69,12 +68,12 @@ class GetSimpleNumber
         return true;
     }
 
-    int GenerateNumber()
+    int GetSimpleNumber::GenerateNumber()
     {
         ll num = rand();
         return num;
     }
-    int GetNumber()
+    int GetSimpleNumber::GetNumber()
     {
         int gnum = GenerateNumber();
         int iteration = 5;
@@ -82,13 +81,12 @@ class GetSimpleNumber
             return gnum;
         else GetNumber();
     }
-    int GetPrimaryNumber()
+    int GetSimpleNumber::GetPrimaryNumber()
     {
 
         srand(time(NULL));
         int simpleNumber = GetNumber();
-        cout << simpleNumber;
+        
 
         return simpleNumber;
     }
-};

@@ -1,21 +1,19 @@
 #include "GetExhibitor.h"
 #include "GetSimpleNumber.h"
 #define ll long long
-class GetExhibitor
-{
-	long long CreateExhibitor(ll fi)
+
+	long long GetExhibitor::CreateExhibitor(ll fi)
 	{
 		ll fiEx = fi;
 		long long exhibitor = GetPrimeryNumber();
-		if (exhibitor < fiEx)
+		if (exhibitor < fi)
 		{
 			return exhibitor;
 		}
 		else CreateExhibitor(fiEx);
 	}
-	long long GetPrimeryNumber()
+	long long GetExhibitor::GetPrimeryNumber()
 	{
 		GetSimpleNumber simpleN;
 		return simpleN.GetPrimaryNumber();
 	}
-};

@@ -10,6 +10,10 @@ using namespace std;
 int main()
 {
 	PublicKey a;
-	cout << a.e << "\n";
-	cout << a.mod;
+	a.GetPublicKey();
+	for (ll i = 0; i < 2; i++)
+	{
+		ll m = a.GetPublicKey()[i];
+		cout << m << "\n";
+	} 
 }

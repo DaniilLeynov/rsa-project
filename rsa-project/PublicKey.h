@@ -9,11 +9,13 @@
 class PublicKey
 {
 public:
-	PublicKey();
+	ll * GetPublicKey();
+	
+
 	ll e;
 	ll mod;
 private:
-	void GetPublicKey();
+	
 	
 };
 

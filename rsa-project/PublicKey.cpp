@@ -6,10 +6,9 @@
 #include "GetExhibitor.h"
 #define ll long long
 
-class PublicKey
-{
 
-	void GetPublicKey()
+
+	ll * PublicKey::GetPublicKey()
 	{
 		GetSimpleNumber SimpleNumber;
 		ll p = SimpleNumber.GetPrimaryNumber();
@@ -20,14 +19,11 @@ class PublicKey
 		ll eFun = fi.GetFi(p, q); // EulerFunction
 		GetExhibitor ex;
 		ll exhibitor = ex.CreateExhibitor(eFun);
+		ll publicKey[] = {exhibitor, modular};
 
-		ll mod = modular;
-		ll e = exhibitor;
+		return publicKey;
 		
 	}
-	PublicKey()
-	{
-		GetPublicKey();
-	}
-};
+	
+
 
