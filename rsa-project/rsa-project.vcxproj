@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EulerFunction.cpp" />
+    <ClCompile Include="GetExhibitor.cpp" />
     <ClCompile Include="GetSimpleNumber.cpp" />
     <ClCompile Include="Mod.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EulerFunction.h" />
+    <ClInclude Include="GetExhibitor.h" />
     <ClInclude Include="GetSimpleNumber.h" />
     <ClInclude Include="Mod.h" />
   </ItemGroup>

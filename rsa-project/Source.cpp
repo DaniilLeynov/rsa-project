@@ -5,16 +5,20 @@
 #include "GetSimpleNumber.h"
 #include "Mod.h"
 #include "EulerFunction.h"
+#include "GetExhibitor.h"
+#define ll long long
 using namespace std;
 
 
 int main()
 {
 	GetSimpleNumber SimpleNumber;
-	int p = SimpleNumber.GetPrimaryNumber();
-	int q = SimpleNumber.GetPrimaryNumber();
+	ll p = SimpleNumber.GetPrimaryNumber();
+	ll q = SimpleNumber.GetPrimaryNumber();
 	Mod modul;
-	int mod = modul.CreateMod(p, q);
+	ll mod = modul.CreateMod(p, q);
 	EulerFunction fi;
-	int eFun = fi.GetFi(p, q);
+	ll eFun = fi.GetFi(p, q); // EulerFunction
+	GetExhibitor ex;
+	ll exhibitor = ex.CreateExhibitor(eFun); 
 }
